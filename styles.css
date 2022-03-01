@@ -13,6 +13,10 @@ td{
 }
 
 footer{
-    margin: 20px;
+    margin: 25px;
     text-align: center
+}
+
+#pedidos{
+    margin: auto;
 }
