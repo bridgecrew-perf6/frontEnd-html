@@ -20,3 +20,8 @@ footer{
 #pedidos{
     margin: auto;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
