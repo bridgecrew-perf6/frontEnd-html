@@ -20,57 +20,62 @@
             </nav>
         </header>
 
-        <form>
+        <form onsubmit="alert('Pedido enviado :) '); return false;">
 
             <h3>Seleccione Sabores</h3>
             
-            <input type="checkbox" id="chocolate">
-            <label for="chocolate">Chocolate</label>
+            <input type="checkbox" id="tres-chocolates">
+            <label for="tres-chocolates">Tres Chocolates</label>
             <br>
         
-            <input type="checkbox" id="tres_leches">
-            <label for="tres_leches">Tres Leches</label>
+            <input type="checkbox" id="red-velvet">
+            <label for="red-velvet">Red Velvet</label>
             <br>
 
             <input type="checkbox" id="zanahoria">
             <label for="zanahoria">Zanahoria</label>
             <br>
 
-            <input type="checkbox" id="vainilla">
-            <label for="vainilla">Vainilla</label>
+            <input type="checkbox" id="mil-hojas">
+            <label for="mil-hojas">Mil-hojas</label>
             <br>
 
 
             <h3>Seleccione Adornos</h3>
             
             <input type="checkbox" id="adornoI">
-            <label for="adornoI">Adorno I</label>
+            <label for="adornoI">Fondant</label>
             <br>
         
-            <input type="checkbox" id="adornoII">
-            <label for="adornoII">Adorno II</label>
+            <input type="checkbox" id="frutales">
+            <label for="frutales">Frutales</label>
             <br>
 
-            <input type="checkbox" id="adornoIII">
-            <label for="adornoIII">Adorno II</label>
+            <input type="checkbox" id="flores">
+            <label for="flores">Flores</label>
             <br>
 
-            <input type="checkbox" id="adornoIV">
-            <label for="adornoIV">Adorno II</label>
+            <input type="checkbox" id="dibujo">
+            <label for="dibujo">Dibujo</label>
             <br>
 
 
             <h3>Descripción</h3>
-            <textarea placeholder="Escriba una descripción"></textarea>   
+            <textarea placeholder="Escriba una descripción de su pedidos"></textarea>   
 
             <h3>Datos de Contacto</h3>
 
-            <input type="text" placeholder="Nombre del cliente"><br><br>
-            <input type="tel"  placeholder="Numero teléfonico"><br><br>
-            <input type="email"  placeholder="Correo electronico"><br><br>
+            <label for="nombre">Nombre*</label><br>
+            <input type="text" id="nombre" placeholder="Nombre del cliente" required><br><br>
+
+            <label for="telefono">Teléfono*</label><br>
+            <input type="tel" id="telefono" placeholder="Numero teléfonico"><br><br>
+
+            <label for="correo">e-mail*</label><br>
+            <input type="email"  id="correo" placeholder="Correo electronico"><br><br>
 
 
-            <input type="submit">
+            <input type="submit" value="Enviar Pedido">
         </form>
 
     

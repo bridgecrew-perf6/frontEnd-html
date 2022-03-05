@@ -74,3 +74,14 @@ section h3{
     font-weight: bold;
 }
 
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form textarea{
+    width: 300px;
+    height: 70px;
+
+}
+
