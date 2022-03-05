@@ -65,15 +65,43 @@
 
             <h3>Datos de Contacto</h3>
 
-            <label for="nombre">Nombre*</label><br>
-            <input type="text" id="nombre" placeholder="Nombre del cliente" required><br><br>
+            <section>
 
-            <label for="telefono">Teléfono*</label><br>
-            <input type="tel" id="telefono" placeholder="Numero teléfonico"><br><br>
+                <div class="string-field">
+                    <label for="nombre">Nombre<span>*</span></label><br>
+                    <input type="text" id="nombre"
+                           placeholder="Nombre del cliente" required class="input-string"
+                    >
+                </div>
 
-            <label for="correo">e-mail*</label><br>
-            <input type="email"  id="correo" placeholder="Correo electronico"><br><br>
+                <div class="string-field">
+                    <label for="telefono">Teléfono<span>*</span></label><br>
+                    <input type="tel" id="telefono"
+                           placeholder="Numero (10 dígitos)" required class="input-string"
+                           pattern="[0-9]{10}"
 
+                    >
+                </div>        
+
+                <div class="string-field">
+                    <label for="correo">e-mail<span>*</span></label><br>
+                    <input type="email"  id="correo"
+                           placeholder="Correo electrónico" required class="input-string"
+
+                    >
+
+                </div>
+
+                 <div class="string-field">
+                    <label for="fecha">Fecha Entrega<span>*</span></label><br>
+                    <input type="date"  id="fecha"
+                           placeholder="Fecha de Entrega" required class="input-string"
+
+                    >
+
+                </div>
+                
+            </section>
 
             <input type="submit" value="Enviar Pedido">
         </form>
