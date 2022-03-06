@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pastelería-Pedido</title>
+
+         <link rel="icon" href="../pastel.png">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/pedido.css">
+    </head>
+    <body>
+        
+       <header>
+           <div class="header-left">
+                <img src="../pastel.png" width=100px title="Pastelería Galáctica"/>
+                <h1>Pedido</h1>
+            </div>
+
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Menú</a></li>
+                    <li><a href="pedido.html">Pedido</a></li>
+                    <li><a href="dashboard.html">DashBoard</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form onsubmit="alert('Pedido enviado :) '); return false;">
+
+            <h2>Ingredientes</h2>    
+            <section id="contenedor-ingredientes">
+                
+                <div class="ingredientes-categoria">
+                    <h3>Seleccione Sabores</h3>
+                    
+                    <input type="checkbox" id="tres-chocolates">
+                    <label for="tres-chocolates">Tres Chocolates</label>
+                    <br>
+                
+                    <input type="checkbox" id="red-velvet">
+                    <label for="red-velvet">Red Velvet</label>
+                    <br>
+
+                    <input type="checkbox" id="zanahoria">
+                    <label for="zanahoria">Zanahoria</label>
+                    <br>
+
+                    <input type="checkbox" id="mil-hojas">
+                    <label for="mil-hojas">Mil-hojas</label>
+                    <br>
+
+                </div>
+
+<!--
+                <div class="ingredientes-categoria">
+                    <h3>Seleccione Adornos</h3>
+                    
+                    <input type="checkbox" id="adornoI">
+                    <label for="adornoI">Fondant</label>
+                    <br>
+                
+                    <input type="checkbox" id="frutales">
+                    <label for="frutales">Frutales</label>
+                    <br>
+
+                    <input type="checkbox" id="flores">
+                    <label for="flores">Flores</label>
+                    <br>
+
+                    <input type="checkbox" id="dibujo">
+                    <label for="dibujo">Dibujo</label>
+                    <br>
+
+                </div>
+-->
+
+                <div class="ingredientes-categoria">
+                    <h3>Seleccione Adorno</h3>
+                    
+                    <input type="radio" id="fondant" name="adorno">
+                    <label for="fondant">Fondant</label>
+                    <br>
+                
+                    <input type="radio" id="frutales" name="adorno">
+                    <label for="frutales">Frutales</label>
+                    <br>
+
+                    <input type="radio" id="flores" name="adorno">
+                    <label for="flores">Flores</label>
+                    <br>
+
+                    <input type="radio" id="dibujo" name="adorno">
+                    <label for="dibujo">Dibujo</label>
+                    <br>
+
+                    <input type="radio" id="ninguno" name="adorno" checked>
+                    <label for="ninguno">Sin Adorno</label>
+   
+
+                </div>
+
+
+
+                <div class="ingredientes-categoria">
+                    <h3>Número de Pasteles</h3>
+                    <select>
+                        <option>1 Pastel</option>
+                        <option>2 Pasteles</option>
+                        <option>3 Pasteles</option>
+                        <option>4 Pasteles</option>
+                        <option>5 Pasteles</option>
+                    </select>
+                </div>    
+
+                <div class="ingredientes-categoria">
+                    <h3 style="text-align:left">Descripción</h3>
+                    <textarea placeholder="Escriba una descripción de su pedido" style="resize:none"></textarea>   
+                </div>    
+
+
+            </section>
+
+
+
+
+            <h2>Datos de Contacto</h2>
+            <section>
+
+                <div class="string-field">
+                    <label for="nombre">Nombre<span>*</span></label><br>
+                    <input type="text" id="nombre"
+                           placeholder="Nombre del cliente" required class="input-string"
+                    >
+                </div>
+
+                <div class="string-field">
+                    <label for="telefono">Teléfono<span>*</span></label><br>
+                    <input type="tel" id="telefono"
+                           placeholder="Numero (10 dígitos)" required class="input-string"
+                           pattern="[0-9]{10}"
+
+                    >
+                </div>        
+
+                <div class="string-field">
+                    <label for="correo">e-mail<span>*</span></label><br>
+                    <input type="email"  id="correo"
+                           placeholder="Correo electrónico" required class="input-string"
+
+                    >
+
+                </div>
+
+                 <div class="string-field">
+                    <label for="fecha">Fecha Entrega<span>*</span></label><br>
+                    <input type="date"  id="fecha"
+                           placeholder="Fecha de Entrega" required class="input-string"
+
+                    >
+
+                </div>
+                
+            </section>
+
+
+            <div class="form-footer">
+                <input type="submit" value="Enviar Pedido">
+            </div>
+        </form>
+
+    
+         <footer>
+            Calle Segunda #42, tel: 55-789-6543, horario: 11:00am- 7:00pm
+        </footer>
+        
+    </body>
+</html>
